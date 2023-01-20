@@ -1,5 +1,14 @@
+import Table from 'react-bootstrap/Table'
+const BoardMessage =  ({id, name, message}) => (
+    <>
+      <tr>
+            <td >{id+1}</td>
+            <td >{name}</td>
+            <td>{message}</td>
+      </tr>
+    </>
+)
 const MessageBoard = () => {
-    const { Table } = ReactBootstrap;
     const messages = [
       { id: 0, name: "Bill", message: "Hi All!" },
       { id: 1, name: "Ann", message: "ICS211 is fun" },
@@ -25,4 +34,5 @@ const MessageBoard = () => {
         </Table>
     );
     
-}
+};
+export default MessageBoard;

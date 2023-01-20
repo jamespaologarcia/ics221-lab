@@ -3,3 +3,4 @@ const Header = () => (
         <h2>ICS211 Message Board App </h2>
     </div>
 )
+export default Header;
